@@ -41,21 +41,6 @@ module.exports = function prompt(name, generator) {
             message: 'What would you like to call this project:',
             default: generator.appName, // Default to current folder name
             validate: validate
-        },
-        {
-            name: 'creatorName',
-            message: 'Your name:',
-            validate: validate
-        },
-        {
-            name: 'githubUser',
-            message: 'Your github user name:',
-            validate: validate
-        },
-        {
-            name: 'email',
-            message: 'Your email:',
-            validate: validate
         }
     ];
 

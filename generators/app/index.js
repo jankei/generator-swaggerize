@@ -71,19 +71,19 @@ module.exports = Generators.Base.extend({
                 this.destinationPath()
             );
             //Package and Docs
-            ['package.json', 'README.md'].forEach(function (file) {
-                self.fs.copyTpl(
-                    self.templatePath(file),
-                    self.destinationPath(file),
-                    self
-                );
-            });
+            // ['package.json', 'README.md'].forEach(function (file) {
+            //     self.fs.copyTpl(
+            //         self.templatePath(file),
+            //         self.destinationPath(file),
+            //         self
+            //     );
+            // });
             //Server file
-            this.fs.copyTpl(
-                this.templatePath(Path.join(this.framework, 'server.js')),
-                this.destinationPath('server.js'),
-                this
-            );
+            // this.fs.copyTpl(
+            //     this.templatePath(Path.join(this.framework, 'server.js')),
+            //     this.destinationPath('server.js'),
+            //     this
+            // );
         },
         tests: function () {
             /**
